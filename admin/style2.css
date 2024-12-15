@@ -1,0 +1,210 @@
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Body */
+    body{
+        /* padding: 20px; */
+    }
+    
+    
+    main {
+        background-color: var(--bg-primary-color);
+        color: var(--black-color);
+        line-height: 1.6;
+        height: 95vh;
+        display: flex;
+        /* align-items: end; */
+        justify-content: center;
+    }
+    
+    
+    /* Container for Content */
+    .container,nav {
+        width: 100%;
+        /* border:1px solid #333; */
+        border:1px solid #E67E22;
+        max-width: 1200px;
+        background-color: var(--white-color);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        /* margin: auto; */
+        overflow: auto;
+        /* max-height: 94vh; */
+        position: relative;
+        
+    }
+    .container{
+        max-height: 82vh;
+        margin-top: 15px;
+    }
+    
+    nav{
+        height: 100%;
+        margin: auto;
+        > a{
+            font-weight: 700;
+            font-size: 1.4em;
+            color: #333;
+            margin-right: .5em;
+            text-decoration: none;
+        }
+        > a:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    /* Heading */
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        /* color: var(--primary-color); */
+        color: #E67E22;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #E67E22;
+        padding-bottom: 1em;
+        /* background-color: red; */
+        position: sticky;
+        top: 0;
+        z-index:9;
+        background-color: #fff;
+        left:0;
+        right:0;
+    }
+    
+    /* Table */
+    .order-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    .order-table th, .order-table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--gray-color);
+        white-space: nowrap;
+    }
+    .order-table thead{
+        /* background-color: #000; */
+        background-color: #E67E22;
+        color: #fff;
+    }
+    
+    .order-table th {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+    
+    .order-table tr:nth-child(even) {
+        background-color: #eee;
+    }
+    
+    .order-table tr:hover {
+        background-color: var(--bg-primary-color);
+    }
+    
+    /* Message for No Orders */
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--black-color);
+    }
+    .btn{
+        padding: .25em 1em;
+        border-radius: 1em;
+        cursor: pointer;
+        border:1px solid;
+
+    }
+    .btn-danger{
+        background-color: #ff00004f;
+        border-color: red;
+    }
+    .btn-success{
+        background-color: #00800047;
+        border-color: green;
+    }
+
+
+
+
+    .table-image{
+        width: 60px;
+        height: 60px;
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    dialog {
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        position: absolute; 
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 70vw;
+        height: 70vh;
+        align-self: center;
+        justify-self: center;
+        z-index: 99;
+    }
+    dialog form {
+        padding: 20px;
+        border-radius: 10px;
+        width: fit-content;
+        border: none;
+        height: 100%;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4    );
+
+    }
+
+
+
+form input,
+form textarea
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+/* form input[type="number"] {
+    max-width: 100px; 
+} */
+
+/* form button {
+    background-color: #E67E22;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: 1px solid #E67E22;
+}
+
+form button:hover {
+    background-color: white;
+    color: #E67E22;
+} */
+
+/* Label Styling */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color:#333;
+}
+
